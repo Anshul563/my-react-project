@@ -10,7 +10,7 @@ const Hero = () => {
                 <button className='text-white bg-[#1f6462] border-none py-3 px-7 rounded-sm'>Resume</button>
             </div>
             <div className="h-1/2 md:h-screen w-full">
-                <img className='flex mx-auto h-80 w-80 md:h-screen md:w-full' src="src\assets\photo.jpg" alt="" />
+                <img className='flex mx-auto h-80 w-80 md:h-screen md:w-full' src="photo.jpg" alt="" />
             </div>
         </div>
     )
