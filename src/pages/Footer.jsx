@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 import SocialMediaIcons from './SocialMediaIcons'
 
 const Footer = () => {
@@ -7,10 +8,16 @@ const Footer = () => {
         <div className='flex flex-col md:flex-row w-full h-auto md:h-40 bg-[#50e9da] p-4'>
             <div className="flex flex-col items-center md:w-1/3 space-y-1 mb-4 md:mb-0">
                 <h3 className='text-xl font-semibold text-[#2a454e]'>Menu</h3>
-                <a className='text-sm text-[#2a454e] hover:text-gray-200' href="">Home</a>
-                <a className='text-sm text-[#2a454e] hover:text-gray-200' href="">About</a>
-                <a className='text-sm text-[#2a454e] hover:text-gray-200' href="">Projects</a>
-                <a className='text-sm text-[#2a454e] hover:text-gray-200' href="">Contact</a>
+                <a className='text-sm text-[#2a454e] hover:text-gray-200' href=""><Link to="/" >Home</Link></a>
+                <a className='text-sm text-[#2a454e] hover:text-gray-200' ><Link to="/about" >About</Link></a>
+                <a className='text-sm text-[#2a454e] hover:text-gray-200' href="">                    <Link to="/projects">Projects</Link></a>
+                <a className='text-sm text-[#2a454e] hover:text-gray-200' href=""><Link to="/contact">Contact</Link></a>
+                {/* <ul className="flex space-x-4">
+                    <li><Link to="/" className='mx-6 text-[#acf2ea] uppercase text-xs transition-all hover:text-gray-300'>Home</Link></li>
+                    <li><Link to="/about" className='mx-6 text-[#acf2ea] uppercase text-xs transition-all hover:text-gray-300'>About</Link></li>
+                    <li><Link to="/projects" className='mx-6 text-[#acf2ea] uppercase text-xs transition-all hover:text-gray-300'>Projects</Link></li>
+                    <li><Link to="/contact" className='mx-6 text-[#acf2ea] uppercase text-xs transition-all hover:text-gray-300'>Contact</Link></li>
+                </ul> */}
             </div>
             <div className='flex flex-col items-center md:w-1/3 mb-4 md:mb-0'>
                 <h3 className='text-[#2a454e] mt-2 font-semibold text-center text-xl'>Your Name</h3>
